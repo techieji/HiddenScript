@@ -3,6 +3,7 @@ import threading
 from time import sleep
 from random import randint, choice
 from itertools import chain
+import Tree
 
 class Tree:
     def __init__(self, startpath):
