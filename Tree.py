@@ -1,4 +1,5 @@
 import os
+from itertools import chain
 
 class Tree:
     def __init__(self, startpath):
