@@ -1,6 +1,5 @@
 import threading
 import os
-from Virus import HiddenScript
 from shutil import move
 
 def RunFile(exepath):

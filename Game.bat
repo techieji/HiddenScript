@@ -1,3 +1,5 @@
-cd exe.win32-3.8
-SystemTree.exe
+@echo off
+
+%~dp0GameData\Game.py
+%~dp0GameData\Virus.py
 REM Put other files here to be executed
