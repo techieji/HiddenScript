@@ -1,5 +1,5 @@
 import os
-from random import choice
+from random import choice, randint
 from Tree import Tree
 
 def HiddenScript(self):
