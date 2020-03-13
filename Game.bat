@@ -1,5 +1,4 @@
 @echo off
 
 %~dp0GameData\Game.py
-%~dp0GameData\Virus.py
-REM Put other files here to be executed
+REM Don't put other files here because Game.py contains everything
