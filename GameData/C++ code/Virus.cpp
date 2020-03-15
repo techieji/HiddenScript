@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <Header.h>
+#include <fstream> // This library allows for file modification
 
 using namespace std;
 
